@@ -2,30 +2,112 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
-    <title>CSS Crash Course</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
+
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="box-wrapper">
-          <div class="box box-small">Hello my name is Malique</div>
-          <div class="box box-small">You gotta come get me right</div>
-          <div class="tiny-wrapper">
-            <div class="box box-tiny">Yooo</div>
-            <div class="box box-tiny">come</div>
-            <div class="box box-tiny">get some</div>
+    <section>
+      <nav>
+        <img src="./assets/FES.svg" class="logo" alt="" />
+        <ul>
+          <li><a href="about">About</a></li>
+          <li><a href="discord">Discord</a></li>
+          <li><a href="contact">Contact</a></li>
+        </ul>
+      </nav>
+      <header>
+        <div class="row">
+          <div>
+            <h1>Best place to learn Frontend</h1>
+            <p class="subheader">
+              Go from being an absolute beginner to pro with a simplified
+              process
+            </p>
+            <button>Start now</button>
+          </div>
+          <figure>
+            <img src="./assets/laptop.png" alt="Home page image" />
+          </figure>
+        </div>
+      </header>
+    </section>
+
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <div class="row">
+          <div class="section__description">
+            <div class="section__description--wrapper">
+              <p class="section__description--para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Deserunt voluptates dolorem hic expedita. Corrupti nostrum,
+                doloremque mollitia rem asperiores natus praesentium esse nihil
+                sequi veritatis. Aperiam, et. Quas, ex accusamus.
+              </p>
+              <p class="section__description--para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Deserunt voluptates dolorem hic expedita. Corrupti nostrum,
+                doloremque mollitia rem asperiores natus praesentium esse nihil
+                sequi veritatis. Aperiam, et. Quas, ex accusamus.
+              </p>
+            </div>
+            <figure class="about__img--wrapper">
+              <img src="./assets/about.jpg" alt="" />
+            </figure>
           </div>
         </div>
-        <div class="box box-large">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit animi
-          quisquam officiis, harum saepe iure facilis doloribus est aut odio
-          delectus praesentium, nobis totam commodi. Possimus iure rerum
-          explicabo ipsa. ipsum dolor sit amet consectetur adipisicing elit.
-          Deserunt, consectetur!
+      </section>
+
+      <section id="discord">
+        <h2>Discord</h2>
+          <div class="row"></div>
+          <div class="section__description">
+            <figure class="about__img--wrapper">
+              <img src="./assets/discord.png" alt="" />
+            </figure>
+            <div class="section__description--wrapper">
+              <p class="section__description--para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure,
+                ullam quos! Eveniet repudiandae sapiente, harum illum debitis
+                corrupti possimus similique quo adipisci vitae minus eius est
+                natus eum! Voluptates, quibusdam?
+              </p>
+              <p class="section__description--para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure,
+                ullam quos! Eveniet repudiandae sapiente, harum illum debitis
+                corrupti possimus similique quo adipisci vitae minus eius est
+                natus eum! Voluptates, quibusdam?
+              </p>
+            </div>
         </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <form action="">
+          <span>Email</span>
+          <input type="text" placeholder="jane@example.com" />
+          <span>Message</span>
+          <textarea
+            type="text"
+            placeholder="Cool website, lets get connected!"
+          ></textarea>
+          <button>Contact Us!</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <img class="footer__logo" src="./assets/FES.svg" alt="" />
+      <div class="footer__links">
+        <a class="footer__link" href="#about">About</a>
+        <a class="footer__link" href="#discord">Discord</a>
+        <a class="footer__link" href="#contact">Contact</a>
+        <a href="">Courses</a>
       </div>
-    </div>
+      <p>Copyright Frontend simplified</p>
+    </footer>
   </body>
 </html>
